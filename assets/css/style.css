@@ -481,9 +481,13 @@ tr:nth-of-type(1) th {
   margin-bottom: 5rem;
 }
 
+.toggle-button {
+  border: 1px solid var(--primary-green);
+  border-radius: 8px;
+  padding: 1rem;
+}
 .inactive-toggle {
   background-color: transparent;
-  border: 1px solid var(--primary-green);
 }
 
 .pricing-options {
