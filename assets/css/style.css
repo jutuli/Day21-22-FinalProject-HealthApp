@@ -467,3 +467,41 @@ td {
 tr:nth-of-type(1) th {
   border-bottom: 1px solid var(--primary-green);
 }
+
+/* =============== PRICING SECTION STYLES ============ */
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.inactive-toggle {
+  background-color: transparent;
+  border: 1px solid var(--primary-green);
+}
+
+.pricing-options {
+  display: grid;
+  grid-template: auto / repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 4rem;
+}
+
+.pricing-plan p span {
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: var(--secondary-medium);
+}
+
+.pricing {
+  margin-bottom: 5rem;
+}
