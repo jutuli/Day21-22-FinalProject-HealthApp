@@ -44,7 +44,20 @@
             <button>Book a Demo</button>
           </div>
           <div class="happy-customers">
-            <img src="" alt="Pictures of Happy Customers" />
+            <div class="happy-customer-img">
+              <img
+                src="./assets/img/happy-customer1.png"
+                alt="Woman Customer"
+              />
+              <img
+                src="./assets/img/happy-customer2.png"
+                alt="Woman Customer"
+              />
+              <img
+                src="./assets/img/happy-customer3.png"
+                alt="Woman Customer"
+              />
+            </div>
             <p><span>430+</span> Happy Customers</p>
           </div>
         </article>
@@ -215,7 +228,7 @@
           information to calculate your individual requirements.
         </p>
       </div>
-      <form>
+      <form onsubmit="calcCalorieRequirement()">
         <label for="bodySize">Body size (in cm)</label>
         <input type="number" name="body-size" id="bodySize" />
         <label for="age">Age</label>
@@ -224,38 +237,38 @@
         <input type="number" name="weight" id="weight" />
         <label for="activityLevel"></label>
         <select name="activity-level" id="activityLevel">
-          <option value="sleeping">
+          <option value="0.95">
             At rest, exclusively sedentary lifestyle such as lying in a bed,
             usually the individual is in a bed or chair bound state.
           </option>
-          <option value="very-sedentary">
+          <option value="1.2">
             Exclusively sedentary work with little or no physical activity in
             leisure time.
           </option>
-          <option value="sedentary">
+          <option value="1.5">
             Sedentary activity and seated work with some need for occasional
             walking or standing. Little to no strenuous leisure activities.
           </option>
-          <option value="light-moderate">
+          <option value="1.7">
             Predominantly standing or walking work with some strenuous leisure
             activity.
           </option>
-          <option value="moderate">
+          <option value="1.9">
             Predominantly standing or walking work with significant amounts of
             strenuous leisure activity.
           </option>
-          <option value="heavy">
+          <option value="2.2">
             Heavy occupational work or significant strenuous leisure activities.
           </option>
         </select>
         <fieldset>
           <legend>Gender</legend>
           <label for="female">Female</label>
-          <input type="radio" name="female" id="female" />
+          <input type="radio" name="gender" id="female" />
           <label for="male">Male</label>
-          <input type="radio" name="male" id="male" />
+          <input type="radio" name="gender" id="male" />
         </fieldset>
-        <button>Calculate</button>
+        <button type="submit">Calculate</button>
       </form>
       <table>
         <tr>
