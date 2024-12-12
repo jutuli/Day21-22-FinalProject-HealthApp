@@ -13,8 +13,12 @@
 html {
   font-family: "Urbanist", Arial, Helvetica, sans-serif;
   font-size: 10px;
-  width: 1920px;
-  height: 6585px;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  font-family: inherit;
 }
 
 img {
@@ -37,6 +41,15 @@ img {
 }
 
 /* ============= SHARED STYLES =============== */
+h1,
+h2,
+h3,
+h4,
+button,
+label {
+  color: var(--secondary-dark);
+}
+
 h1,
 h2,
 h3,
@@ -68,7 +81,7 @@ a {
     var(--section-margin-lr);
 }
 
-/* ============= Overarching Styles ========== */
+/* ============= OVERARCHING STYLES ========== */
 h1 {
   font-size: 5.8rem;
 }
@@ -90,12 +103,20 @@ li {
 }
 
 p {
-  font-weight: 400;
+  font-weight: 500;
+  color: var(--main-text);
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+button {
+  padding: var(--button-padding);
+  border-radius: 8px;
+  background-color: var(--primary-green);
+  border: none;
 }
 
 /* ========== HEADER STYLES ============ */
@@ -111,7 +132,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   background-color: var(--secondary-medium);
   padding: 1rem 2rem;
   margin: 1.4rem 0;
@@ -145,6 +165,7 @@ header {
 .top-banner-center > h4 {
   flex-grow: 1;
   white-space: nowrap;
+  color: white;
 }
 
 .top-banner > .top-banner-center > img {
@@ -172,14 +193,74 @@ ul {
   height: 45px;
 }
 
-nav button {
-  background-color: var(--primary-green);
-  padding: var(--button-padding);
-  border-radius: 8px;
-}
-
 .nav-container-right {
   display: flex;
   align-items: center;
   gap: 4rem;
+}
+
+/* ============ HERO STYLES ============ */
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin: 0 var(--section-margin-lr) var(--section-margin-bottom) 0;
+}
+
+.hero h3 {
+  padding: 1rem 0;
+  text-decoration: underline var(--primary-green);
+  text-underline-offset: 2rem;
+}
+
+.hero article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero article h1 {
+  line-height: normal;
+}
+
+.hero-buttons {
+  gap: 2rem;
+}
+
+.hero-buttons > button:nth-of-type(2) {
+  background-color: var(--primary-light);
+  border: 1px solid var(--primary-green);
+}
+
+.happy-customers {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.happy-customers p span {
+  color: var(--secondary-medium);
+}
+
+.happy-customer-img {
+  display: flex;
+  position: relative;
+  width: 14rem;
+  height: 8rem;
+  border: 1px solid var(--primary-green);
+  border-radius: 58px;
+}
+.happy-customer-img > img {
+  position: absolute;
+  width: 6rem;
+  top: 1rem;
+  &:nth-of-type(1) {
+    left: 1rem;
+  }
+  &:nth-of-type(2) {
+    left: 4rem;
+  }
+  &:nth-of-type(3) {
+    left: 7rem;
+  }
 }
