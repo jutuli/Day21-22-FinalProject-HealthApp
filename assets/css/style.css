@@ -238,6 +238,7 @@ ul {
 }
 
 .hero-buttons {
+  display: flex;
   gap: 2rem;
 }
 
@@ -327,4 +328,68 @@ ul {
 }
 .feature:nth-of-type(6) > h3::before {
   content: url(../img/backpack.png);
+}
+
+/* ============= OUR BLOGS STYLING =========== */
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+.blog-post > img {
+  padding-bottom: 4rem;
+}
+
+.blog-post > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.blog-post-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--primary-background);
+  border-radius: 8px;
+  border: 1px solid var(--primary-medium);
+}
+
+.author-info {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.author-info > img {
+  height: 6rem;
+  width: auto;
+}
+
+.author-info p:nth-of-type(2) {
+  color: var(--secondary-text);
+}
+
+.boxed-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon-box {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-light);
+  border: 1px solid #eef8d3;
+  border-radius: 8px;
+}
+
+.boxed-icons img {
+  width: 50%;
 }
