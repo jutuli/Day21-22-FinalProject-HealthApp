@@ -28,6 +28,7 @@ img {
 :root {
   --section-margin-bottom: 13vh;
   --section-margin-lr: 8.5vw;
+  --heading-margin-bottom: 7vh;
   --button-padding: 1.4rem 2.4rem;
   --primary-green: #cbea7b;
   --primary-background: #fafdf2;
@@ -82,6 +83,11 @@ a {
 }
 
 /* ============= OVERARCHING STYLES ========== */
+
+body {
+  background-color: var(--primary-background);
+}
+
 h1 {
   font-size: 5.8rem;
 }
@@ -117,6 +123,14 @@ button {
   border-radius: 8px;
   background-color: var(--primary-green);
   border: none;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: var(--heading-margin-bottom);
 }
 
 /* ========== HEADER STYLES ============ */
@@ -263,4 +277,54 @@ ul {
   &:nth-of-type(3) {
     left: 7rem;
   }
+}
+
+/* ============ FEATURES STYLES========= */
+
+.grid {
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.card {
+  background-color: var(--primary-light);
+  border-radius: 12px;
+  border: 1px solid var(--primary-medium);
+}
+
+.feature {
+  padding: 5rem 4rem;
+}
+
+.feature > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 2.4rem;
+  gap: 1.4rem;
+  &::before {
+    width: 6.8rem;
+    height: 6.8rem;
+    align-self: center;
+  }
+}
+
+.feature:nth-of-type(1) > h3::before {
+  content: url(../img/flower.png);
+}
+.feature:nth-of-type(2) > h3::before {
+  content: url(../img/graduation-cap.png);
+}
+.feature:nth-of-type(3) > h3::before {
+  content: url(../img/cuttlery.png);
+}
+.feature:nth-of-type(4) > h3::before {
+  content: url(../img/memo-board.png);
+}
+.feature:nth-of-type(5) > h3::before {
+  content: url(../img/dumbbell.png);
+}
+.feature:nth-of-type(6) > h3::before {
+  content: url(../img/backpack.png);
 }
