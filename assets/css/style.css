@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Urbanist";
+  src: url(../fonts/Urbanist-VariableFont_wght.ttf);
+}
+
+/* ============ GENERAL STYLES ============= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Urbanist", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  width: 1920px;
+  height: 6585px;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --section-margin-bottom: 13vh;
+  --section-margin-lr: 8.5vw;
+  --button-padding: 1.4rem 2.4rem;
+  --primary-green: #cbea7b;
+  --primary-background: #fafdf2;
+  --primary-light: #f6fbe9;
+  --primary-medium: #e5f5bd;
+  --secondary-dark: #1a3129;
+  --secondary-medium: #234338;
+  --secondary-light: #346454;
+  --main-text: #4c4c4d;
+  --secondary-text: #98989a;
+}
+
+/* ============= SHARED STYLES =============== */
+h1,
+h2,
+h3,
+h4,
+p,
+button,
+label {
+  line-height: 150%;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h3,
+h4,
+button,
+label,
+a {
+  font-weight: 600;
+}
+
+.features,
+.our-blogs,
+.calorie-requirement,
+.pricing {
+  margin: 0 var(--section-margin-lr) var(--section-margin-bottom)
+    var(--section-margin-lr);
+}
+
+/* ============= Overarching Styles ========== */
+h1 {
+  font-size: 5.8rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3.4rem;
+}
+
+h4,
+button,
+label,
+p,
+li {
+  font-size: 1.8rem;
+}
+
+p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ========== HEADER STYLES ============ */
+
+header {
+  background-color: var(--secondary-dark);
+  padding: 0 var(--section-margin-lr) 0 var(--section-margin-lr);
+  display: flex;
+  flex-direction: column;
+}
+
+.top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--secondary-medium);
+  padding: 1rem 2rem;
+  margin: 1.4rem 0;
+  position: relative;
+  height: 4.7rem;
+  overflow: hidden;
+  border: 1px solid #2c5446;
+  border-radius: 6px;
+}
+
+.scribbles {
+  width: 20%;
+  position: absolute;
+
+  top: -1rem;
+
+  &:nth-of-type(1) {
+    left: 1rem;
+  }
+  &:nth-of-type(2) {
+    right: 1rem;
+  }
+}
+
+.top-banner-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.top-banner-center > h4 {
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+.top-banner > .top-banner-center > img {
+  height: 1.8rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+ul {
+  display: flex;
+  gap: 2.6rem;
+}
+
+.desktop-logo {
+  width: 195px;
+  height: 45px;
+}
+
+nav button {
+  background-color: var(--primary-green);
+  padding: var(--button-padding);
+  border-radius: 8px;
+}
+
+.nav-container-right {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
