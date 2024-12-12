@@ -104,7 +104,11 @@ h4,
 button,
 label,
 p,
-li {
+li,
+input,
+select,
+legend,
+table {
   font-size: 1.8rem;
 }
 
@@ -288,7 +292,8 @@ ul {
   gap: 3rem;
 }
 
-.card {
+.card,
+.calorie-calculator {
   background-color: var(--primary-light);
   border-radius: 12px;
   border: 1px solid var(--primary-medium);
@@ -392,4 +397,73 @@ ul {
 
 .boxed-icons img {
   width: 50%;
+}
+
+/* =========== TEST YOUR DAILY CALORIE REQUIREMENT STYLES */
+
+form {
+  display: grid;
+  grid-template: auto / repeat(2, 50%);
+  gap: 6rem;
+  padding: 4rem 6.8rem 5rem 6.8rem;
+}
+
+.form-question {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  height: 5rem;
+  border: 1px solid var(--primary-medium);
+  border-radius: 10px;
+  color: var(--secondary-text);
+  padding: 0 1.6rem;
+}
+
+fieldset {
+  border: 0;
+  grid-area: 3/1/3/-1;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6rem;
+}
+fieldset > label {
+  font-weight: 500;
+}
+
+fieldset > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+form > button {
+  grid-area: 4/1/4/-1;
+  width: 25%;
+  justify-self: center;
+}
+
+table {
+  background-color: white;
+  border: 1px solid var(--primary-green);
+  border-radius: 10px;
+  width: 60%;
+  text-align: left;
+  justify-self: center;
+  margin-bottom: 5rem;
+}
+
+th,
+td {
+  padding: 1rem 3.7rem;
+}
+
+tr:nth-of-type(1) th {
+  border-bottom: 1px solid var(--primary-green);
 }

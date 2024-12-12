@@ -309,65 +309,80 @@
           information to calculate your individual requirements.
         </p>
       </div>
-      <form onsubmit="calcCalorieRequirement()">
-        <label for="bodySize">Body size (in cm)</label>
-        <input type="number" name="body-size" id="bodySize" />
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age" />
-        <label for="weight">Weight</label>
-        <input type="number" name="weight" id="weight" />
-        <label for="activityLevel"></label>
-        <select name="activity-level" id="activityLevel">
-          <option value="0.95">
-            At rest, exclusively sedentary lifestyle such as lying in a bed,
-            usually the individual is in a bed or chair bound state.
-          </option>
-          <option value="1.2">
-            Exclusively sedentary work with little or no physical activity in
-            leisure time.
-          </option>
-          <option value="1.5">
-            Sedentary activity and seated work with some need for occasional
-            walking or standing. Little to no strenuous leisure activities.
-          </option>
-          <option value="1.7">
-            Predominantly standing or walking work with some strenuous leisure
-            activity.
-          </option>
-          <option value="1.9">
-            Predominantly standing or walking work with significant amounts of
-            strenuous leisure activity.
-          </option>
-          <option value="2.2">
-            Heavy occupational work or significant strenuous leisure activities.
-          </option>
-        </select>
-        <fieldset>
-          <legend>Gender</legend>
-          <label for="female">Female</label>
-          <input type="radio" name="gender" id="female" />
-          <label for="male">Male</label>
-          <input type="radio" name="gender" id="male" />
-        </fieldset>
-        <button type="submit">Calculate</button>
-      </form>
-      <table>
-        <tr>
-          <th></th>
-          <th>kcal</th>
-          <th>kJ</th>
-        </tr>
-        <tr>
-          <td>Basal Metabolic Rate</td>
-          <td class="metabolic-kcal">0</td>
-          <td class="metabolic-kj">0</td>
-        </tr>
-        <tr>
-          <td>Total Daily Energy Expenditure</td>
-          <td class="daily-kcal">0</td>
-          <td class="daily-kj">0</td>
-        </tr>
-      </table>
+      <div class="calorie-calculator">
+        <form onsubmit="calcCalorieRequirement()">
+          <div class="form-question">
+            <label for="bodySize">Body size (in cm)</label>
+            <input type="number" name="body-size" id="bodySize" />
+          </div>
+          <div class="form-question">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" />
+          </div>
+          <div class="form-question">
+            <label for="weight">Weight</label>
+            <input type="number" name="weight" id="weight" />
+          </div>
+          <div class="form-question">
+            <label for="activityLevel">Activity</label>
+            <select name="activity-level" id="activityLevel">
+              <option value="0.95">
+                At rest, exclusively sedentary lifestyle such as lying in a bed,
+                usually the individual is in a bed or chair bound state.
+              </option>
+              <option value="1.2">
+                Exclusively sedentary work with little or no physical activity
+                in leisure time.
+              </option>
+              <option value="1.5">
+                Sedentary activity and seated work with some need for occasional
+                walking or standing. Little to no strenuous leisure activities.
+              </option>
+              <option value="1.7">
+                Predominantly standing or walking work with some strenuous
+                leisure activity.
+              </option>
+              <option value="1.9">
+                Predominantly standing or walking work with significant amounts
+                of strenuous leisure activity.
+              </option>
+              <option value="2.2">
+                Heavy occupational work or significant strenuous leisure
+                activities.
+              </option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>Gender</legend>
+            <div>
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Female</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Male</label>
+            </div>
+          </fieldset>
+          <button type="submit">Calculate</button>
+        </form>
+        <table>
+          <tr>
+            <th></th>
+            <th>kcal</th>
+            <th>kJ</th>
+          </tr>
+          <tr>
+            <td>Basal Metabolic Rate</td>
+            <td class="metabolic-kcal">0</td>
+            <td class="metabolic-kj">0</td>
+          </tr>
+          <tr>
+            <td>Total Daily Energy Expenditure</td>
+            <td class="daily-kcal">0</td>
+            <td class="daily-kj">0</td>
+          </tr>
+        </table>
+      </div>
     </section>
     <section class="pricing">
       <div class="heading">
