@@ -451,6 +451,11 @@ select {
   border-radius: 10px;
   color: var(--secondary-text);
   padding: 0 1.6rem;
+  max-width: calc(100% - 6rem);
+}
+
+fieldset input {
+  max-width: 100%;
 }
 
 fieldset {
@@ -610,8 +615,16 @@ footer nav {
 
 /* ? ===== TABLET VIEW ====== */
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1440px) {
   /* General Styles */
+
+  :root {
+    --section-margin-bottom: 10vh;
+    --section-margin-lr: 5.5vw;
+    --heading-margin-bottom: 5vh;
+    --button-padding: 1.4rem 1.6rem;
+  }
+
   h2 {
     font-size: 4.2rem;
   }
@@ -632,9 +645,51 @@ footer nav {
     font-size: 1.6rem;
   }
 
+  /* Header */
   .desktop-logo {
     width: 147px;
     height: 34px;
+  }
+
+  /* Features */
+  .feature > h3 {
+    margin-bottom: 2rem;
+    gap: 2rem;
+    &::before {
+      width: 5.4rem;
+      height: 5.4rem;
+    }
+  }
+
+  /* Our Blog */
+
+  .blog-post {
+    padding: 3rem;
+  }
+
+  .blog-post > div {
+    gap: 2rem;
+  }
+
+  .blog-post-info {
+    padding: 1.6rem;
+  }
+
+  .author-info {
+    gap: 1.4rem;
+  }
+
+  .author-info > img {
+    height: 5rem;
+  }
+
+  .boxed-icons {
+    gap: 0.8rem;
+  }
+
+  .icon-box {
+    height: 4.8rem;
+    width: 4.8rem;
   }
 }
 
@@ -779,10 +834,6 @@ footer nav {
 
   .blog-post > div {
     gap: 1.8rem;
-  }
-
-  .blog-post-info {
-    padding: 1.6rem;
   }
 
   .author-info {
