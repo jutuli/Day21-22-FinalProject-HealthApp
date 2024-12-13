@@ -220,6 +220,19 @@ ul {
   gap: 4rem;
 }
 
+.burg-menu div {
+  background-color: rgb(255, 255, 255);
+  height: 5px;
+  width: 30px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.burg-menu {
+  cursor: pointer;
+  display: none;
+}
+
 /* ============ HERO STYLES ============ */
 
 .hero {
@@ -571,3 +584,68 @@ footer nav {
 .contact > p {
   color: white;
 }
+
+/* - ############ MEDIA QUERIES ######### */
+/* ===== MOBILE VIEW ====== */
+@media screen and (max-width: 550px) {
+  /* General Styles */
+  :root {
+    --section-margin-bottom: 7vh;
+    --section-margin-lr: 4vw;
+    --heading-margin-bottom: 5vh;
+    --button-padding: 1.4rem 1.6rem;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4,
+  button,
+  label,
+  p,
+  li,
+  input,
+  select,
+  legend,
+  table {
+    font-size: 1.4rem;
+  }
+
+  /* ==== HEADER ==== */
+
+  .top-banner {
+    margin: 4rem 0rem 0rem 0rem;
+    height: 4.1rem;
+  }
+
+  .desktop-logo {
+    width: 147px;
+    height: 34px;
+  }
+
+  .scribbles {
+    width: 0%;
+  }
+
+  .top-banner-center {
+    gap: 1rem;
+  }
+
+  .nav-container-right {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
+
+/* ====HERO ==== */
