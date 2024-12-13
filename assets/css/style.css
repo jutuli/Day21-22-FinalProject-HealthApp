@@ -725,4 +725,39 @@ footer nav {
       height: 4.8rem;
     }
   }
+
+  /* ===== Our Blog ===== */
+
+  .blog-post {
+    padding: 2.4rem;
+  }
+
+  .blog-post > img {
+    padding-bottom: 2rem;
+  }
+
+  .blog-post > div {
+    gap: 1.8rem;
+  }
+
+  .blog-post-info {
+    padding: 1.6rem;
+  }
+
+  .author-info {
+    gap: 1rem;
+  }
+
+  .author-info > img {
+    height: 4rem;
+  }
+
+  .boxed-icons {
+    gap: 0.3rem;
+  }
+
+  .icon-box {
+    height: 4rem;
+    width: 4rem;
+  }
 }
