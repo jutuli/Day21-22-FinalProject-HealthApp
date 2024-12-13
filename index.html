@@ -18,7 +18,9 @@
         <div class="top-banner-center">
           <img src="./assets/img/cricket-ball.svg" alt="Cricket Ball" />
           <h4>Join Our personalized Nutrition Demo For Free</h4>
-          <img src="./assets/img/arrow-right.svg" alt="Arrow Right" />
+          <a href="#"
+            ><img src="./assets/img/arrow-right.svg" alt="Arrow Right"
+          /></a>
         </div>
         <img
           class="scribbles"
@@ -321,15 +323,21 @@
         <form onsubmit="calcCalorieRequirement()">
           <div class="form-question">
             <label for="bodySize">Body size (in cm)</label>
-            <input type="number" name="body-size" id="bodySize" />
+            <input
+              type="number"
+              name="body-size"
+              id="bodySize"
+              min="1"
+              max="250"
+            />
           </div>
           <div class="form-question">
             <label for="age">Age</label>
-            <input type="number" name="age" id="age" />
+            <input type="number" name="age" id="age" min="1" max="110" />
           </div>
           <div class="form-question">
             <label for="weight">Weight</label>
-            <input type="number" name="weight" id="weight" />
+            <input type="number" name="weight" id="weight" min="1" max="400" />
           </div>
           <div class="form-question">
             <label for="activityLevel">Activity</label>

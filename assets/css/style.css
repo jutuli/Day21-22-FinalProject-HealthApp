@@ -20,6 +20,12 @@ html {
 
 button {
   font-family: inherit;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--secondary-dark);
+    color: white;
+  }
+  transition: 0.3s ease-in-out;
 }
 
 img {
@@ -40,6 +46,14 @@ img {
   --secondary-light: #346454;
   --main-text: #4c4c4d;
   --secondary-text: #98989a;
+}
+
+a {
+  display: inline-block;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+  }
 }
 
 /* ============= SHARED STYLES =============== */
@@ -276,6 +290,11 @@ ul {
 .hero-buttons > button:nth-of-type(2) {
   background-color: var(--primary-light);
   border: 1px solid var(--primary-green);
+  &:hover {
+    background-color: var(--secondary-dark);
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
 }
 
 .happy-customers {
@@ -525,6 +544,7 @@ tr:nth-of-type(1) th {
   background-color: var(--secondary-light);
   color: white;
 }
+
 .inactive-toggle {
   background-color: transparent;
 }
