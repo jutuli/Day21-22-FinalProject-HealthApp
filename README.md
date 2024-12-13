@@ -1,7 +1,8 @@
 # Project - Personalized Health App 🥗 💪
 
-![Project Screenshot - MacBook Air](./assets/img/project-screenshot-macbook.png)  
-![Project Screenshot - iPhone 14Pro](./assets/img/project-screenshot-iPhone-14.png)
+<img src="./assets/img/project-screenshot-macbook.png" alt="Project Screenshot - MacBook Air" width="600">  
+<img src="./assets/img/project-screenshot-iPhone-14.png" alt="Project Screenshot - iPhone 14Pro" width="400">
+
 The Personalized Health App is a responsive web application designed for a personalized nutrition coaching service. It features a clean user interface, responsive layouts, and dynamic functionality for an engaging user experience.
 
 This project was developed as part of my 6-month Web Development Bootcamp. While the project was planned for Day 21/22 of the curriculum, I joined the bootcamp late and completed it on my Day 12/13. The aim of the project was to practice the concepts from the first module, particularly HTML and CSS. I had 1 ½ days to replicate a Figma design into HTML, CSS, and JavaScript, showcasing my ability to implement and adapt quickly.
