@@ -25,13 +25,13 @@ This project was developed as part of my 6-month Web Development Bootcamp. While
 
 The Personalized Health App replicates a provided Figma design to practice core front-end development skills. It includes:
 
-- A responsive navigation menu with a burger menu for smaller screens.
+- A responsive navigation menu with a burger menu for mobile screens.
 - A hero section with calls-to-action for user engagement.
 - Feature cards showcasing app functionalities.
 - A calorie requirement calculator implemented with JavaScript.
 - Dynamic blog previews and pricing plans with adaptable layouts.
 
-**Note:** Some elements, such as the buttons and the burger menu, are currently non-functional placeholders. The focus of this project was on building the layout and responsive design.
+**Note:** Some elements, such as the buttons and the burger menu, are currently non-functional placeholders. The focus of this project was on building the layout and responsive design for desktop, tablet and mobile devices.
 
 ---
 
