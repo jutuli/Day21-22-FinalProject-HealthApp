@@ -23,7 +23,7 @@ button {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 :root {
@@ -240,6 +240,13 @@ ul {
   align-items: center;
   gap: 5rem;
   margin: 0 var(--section-margin-lr) var(--section-margin-bottom) 0;
+}
+
+.hero > img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  align-self: start;
 }
 
 .hero h3 {
@@ -600,7 +607,39 @@ footer nav {
 }
 
 /* - ############ MEDIA QUERIES ######### */
-/* ===== MOBILE VIEW ====== */
+
+/* ? ===== TABLET VIEW ====== */
+
+@media screen and (max-width: 920px) {
+  /* General Styles */
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  h4,
+  button,
+  label,
+  p,
+  li,
+  input,
+  select,
+  legend,
+  table {
+    font-size: 1.6rem;
+  }
+
+  .desktop-logo {
+    width: 147px;
+    height: 34px;
+  }
+}
+
+/* ? ===== MOBILE VIEW ====== */
+
 @media screen and (max-width: 550px) {
   /* General Styles */
   :root {
@@ -641,11 +680,6 @@ footer nav {
     height: 4.1rem;
   }
 
-  .desktop-logo {
-    width: 147px;
-    height: 34px;
-  }
-
   .scribbles {
     display: none;
   }
@@ -672,6 +706,7 @@ footer nav {
 
   .hero > img {
     border-radius: 0 0 25px 25px;
+    width: 100%;
   }
 
   .hero > div {
