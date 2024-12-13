@@ -811,6 +811,11 @@ footer nav {
     padding: 3rem 2rem 4rem 2rem;
   }
 
+  input,
+  select {
+    width: 100%;
+  }
+
   fieldset {
     border: 0;
     display: flex;
@@ -823,6 +828,7 @@ footer nav {
 
   form > button {
     grid-area: 6/1/6/1;
+    width: 100%;
   }
 
   table {
