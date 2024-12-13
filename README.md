@@ -1,7 +1,7 @@
 # Project - Personalized Health App 🥗 💪
 
-<img src="./assets/img/project-screenshot-macbook.png" alt="Project Screenshot - MacBook Air" height ="600">  
-<img src="./assets/img/project-screenshot-iPhone-14.png" alt="Project Screenshot - iPhone 14Pro" height="600">
+<img src="./assets/img/project-screenshot-macbook.png" alt="Project Screenshot - MacBook Air" height="300">  
+<img src="./assets/img/project-screenshot-iPhone-14.png" alt="Project Screenshot - iPhone 14Pro" height="300">
 
 The Personalized Health App is a responsive web application designed for a personalized nutrition coaching service. It features a clean user interface, responsive layouts, and dynamic functionality for an engaging user experience.
 
