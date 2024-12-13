@@ -581,7 +581,7 @@ footer nav {
   border: 1px solid #2c5446;
 }
 
-.contact > ul > div {
+.contact > ul > li {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -591,7 +591,7 @@ footer nav {
   border: 1px solid #2c5446;
 }
 
-.contact > ul > div > img {
+.contact > ul > li > img {
   height: 2.4rem;
   width: 2.4rem;
 }
@@ -824,5 +824,52 @@ footer nav {
 
   .pricing {
     margin-bottom: 15rem;
+  }
+
+  /* ===== Footer ===== */
+
+  footer {
+    gap: 3rem;
+    padding: 3rem 1.6rem;
+  }
+  footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .scroll-to-top {
+    order: 1;
+  }
+
+  .menu {
+    order: 2;
+  }
+
+  .scroll-to-top > div {
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2rem;
+    gap: 2rem;
+  }
+
+  .contact > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .contact > ul > li {
+    justify-content: center;
+    width: 100%;
   }
 }
