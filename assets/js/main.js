@@ -25,5 +25,3 @@ function calcCalorieRequirement() {
   dailyKcal.innerText = dailyKcalCalc.toFixed(2);
   dailyKj.innerText = dailyKjCalc.toFixed(2);
 }
-
-// ============= PRICING SECTION STYLES ===========
