@@ -499,6 +499,7 @@ tr:nth-of-type(1) th {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1.4rem;
   margin-bottom: 5rem;
 }
 
@@ -506,6 +507,11 @@ tr:nth-of-type(1) th {
   border: 1px solid var(--primary-green);
   border-radius: 8px;
   padding: 1rem;
+}
+
+.active-toggle {
+  background-color: var(--secondary-light);
+  color: white;
 }
 .inactive-toggle {
   background-color: transparent;
@@ -793,5 +799,30 @@ footer nav {
   th,
   td {
     padding: 1rem 1.2rem;
+  }
+
+  /* ===== Pricing ===== */
+
+  .subscription {
+    gap: 1rem;
+  }
+
+  .pricing-options {
+    display: grid;
+    grid-template: auto / 1fr;
+    gap: 3rem;
+  }
+
+  .pricing-plan {
+    padding: 3rem;
+    gap: 2rem;
+  }
+
+  .pricing-plan p span {
+    font-size: 1.8rem;
+  }
+
+  .pricing {
+    margin-bottom: 15rem;
   }
 }
